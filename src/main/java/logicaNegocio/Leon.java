@@ -1,17 +1,20 @@
 package logicaNegocio;
 
-public class Leon extends Animal {
-
-    @Override
-    public void obtenerDieta() {
-        super.obtenerDieta();     }
+class Leon extends Animal {
+    
+    private TipoHabitat habitat = TipoHabitat.TERRESTRE;
 
     @Override
     public String emitirSonido() {
-        super.emitirSonido();
-        System.out.println("Rugido");
+        return "Rugido";
     }
 
-    
-    
+    @Override
+    public String obtenerDieta() {
+        return "Carnívoro";
+    }
+
+    public TipoHabitat getHabitat() {
+        return habitat;
+    }
 }

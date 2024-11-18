@@ -1,15 +1,25 @@
 package logicaNegocio;
 
-public class Perro extends Animal {
+class Perro extends Animal implements Domestico {
+    
+    private TipoHabitat habitat = TipoHabitat.TERRESTRE;
 
     @Override
-    public void obtenerDieta() {
-        super.obtenerDieta(); 
+    public String emitirSonido() {
+        return "Ladrido";
     }
 
     @Override
-    public void emitirSonido() {
-        super.emitirSonido(); 
-}
-    Animal Leon = new Animal ("Rugido", "Carnivoro");
+    public String obtenerDieta() {
+        return "Omnívoro";
+    }
+
+    @Override
+    public String interactuarConHumano() {
+        return "El perro mueve la cola y ladra de felicidad.";
+    }
+
+    public TipoHabitat getHabitat() {
+        return habitat;
+    }
 }

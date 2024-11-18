@@ -2,10 +2,11 @@ package logicaNegocio;
 
 public abstract class Animal {
     
-    public String emitirSonido(){
+    public abstract String emitirSonido();
     
-    }
-    public void obtenerDieta(){
+    
+    public abstract String obtenerDieta();
         
-    }
+    
+    
 }
