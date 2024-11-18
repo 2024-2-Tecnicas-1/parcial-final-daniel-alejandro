@@ -1,5 +1,12 @@
 package logicaNegocio;
 
-public class Delfin {
-    // TODO: Aquí va tu código
+public class Delfin extends Animal {
+        @Override
+    public void obtenerDieta() {
+        super.obtenerDieta();     }
+
+    @Override
+    public String emitirSonido() {
+        super.emitirSonido(); 
+    }
 }
