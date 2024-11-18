@@ -2,7 +2,7 @@ package logicaNegocio;
 
 class Leon extends Animal {
     
-    private TipoHabitat habitat = TipoHabitat.TERRESTRE;
+    TipoHabitat habitat = TipoHabitat.TERRESTRE;
 
     @Override
     public String emitirSonido() {
